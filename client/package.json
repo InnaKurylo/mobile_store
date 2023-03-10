@@ -18,11 +18,11 @@
 		"styled-components": "^5.3.6",
 		"swiper": "^9.0.3",
 		"use-react-router-breadcrumbs": "^4.0.1",
+		"prop-types": "^15.8.1",
 		"yup": "^0.32.11"
 	},
 	"devDependencies": {
 		"react-scripts": "^5.0.1",
-		"prop-types": "^15.8.1",
 		"eslint": "^8.33.0",
 		"eslint-config-airbnb": "^19.0.4",
 		"eslint-config-prettier": "^8.6.0",
