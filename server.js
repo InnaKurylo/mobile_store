@@ -29,7 +29,7 @@ const partners = require("./routes/partners");
 const app = express();
 app.use(express.json());
 const corsOption = {
-  origin: ["http://localhost:3000"],
+  origin: ["/"],
 };
 app.use(cors(corsOption));
 
