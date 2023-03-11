@@ -1,2 +1,2 @@
 export const DOMAIN = "/api";
-export const DOMAIN2 = "/";
+export const DOMAIN2 = "/api";
