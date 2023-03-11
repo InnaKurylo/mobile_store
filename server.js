@@ -31,6 +31,7 @@ app.use(express.json());
 const corsOption = {
   origin: ["http://localhost:3000"],
 };
+
 app.use(cors(corsOption));
 
 // Body parser middleware
