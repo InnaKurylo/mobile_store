@@ -13,7 +13,7 @@ const Home = () => {
 	return (
 		<div>
 			<Slider />
-			{/* <PopularProducts products={products} /> */}
+			<PopularProducts products={products} />
 			<PopularBrands />
 		</div>
 	);

@@ -27,12 +27,6 @@ const partners = require("./routes/partners");
 // const mainRoute = require('./routes/index');
 
 const app = express();
-app.use(express.json());
-const corsOption = {
-  origin: ["https://fe-04-2.onrender.com/"],
-};
-app.use(cors(corsOption));
-
 // Body parser middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
