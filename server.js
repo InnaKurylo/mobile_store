@@ -29,7 +29,7 @@ const partners = require("./routes/partners");
 const app = express();
 app.use(express.json());
 const corsOption = {
-  origin: ["/"],
+  origin: ["https://fe-04-2.onrender.com/"],
 };
 app.use(cors(corsOption));
 
