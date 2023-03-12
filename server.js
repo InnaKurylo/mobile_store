@@ -31,7 +31,6 @@ app.use(express.json());
 const corsOption = {
   origin: ["http://localhost:3000"],
 };
-
 app.use(cors(corsOption));
 
 // Body parser middleware
@@ -42,11 +41,7 @@ const db = require("./config/keys").mongoURI;
 
 // Connect to MongoDB
 mongoose
-  .connect(db, {
-    useNewUrlParser: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true,
-  })
+  .connect(db, { useNewUrlParser: true, useFindAndModify: false })
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.log(err));
 
@@ -88,5 +83,5 @@ if (process.env.NODE_ENV === "production") {
 }
 
 const port = process.env.PORT || 5000;
-console.log("port", port);
+
 app.listen(port, () => console.log(`Server running on port ${port}`));
